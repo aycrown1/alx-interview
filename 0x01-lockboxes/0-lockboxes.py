@@ -9,13 +9,8 @@ def canUnlockAll(boxes):
     canUnlockAll function determines if all the boxes can be opened
     """
     keys = set([0])
-    opened_boxes = set()
+    for current_key in keys.copy():
+        if 0 <= current_key < len(boxes):
+            keys.update(boxes[current_key])
 
-    while keys:
-        current_key = keys.pop()
-        opened_boxes.add(current_key)
-
-        current_box = boxes[current_key]
-        keys.update(set(current_box) - opened_boxes)
-
-    return len(opened_boxes) == len(boxes)
+    return len(keys) == len(boxes)
