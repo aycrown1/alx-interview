@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Interview about a function that returns
-    the perimeter of the island described in grid"""
+"""
+Interview about a function that returns the perimeter of the island described in grid
+"""
 
 
 def check(x):
