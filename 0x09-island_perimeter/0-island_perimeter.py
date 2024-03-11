@@ -13,10 +13,10 @@ def check(x):
 
 def island_perimeter(grid):
     """Calculate the perimeter of the island in the given grid."""
+    message = "Length must be between 1 and 100"
     row = len(grid)
     col = len(grid[0])
-    assert 1 <= row <= 100 and 1 <= col <= 100,
-    "Length must be between 1 and 100"
+    assert 1 <= row <= 100 and 1 <= col <= 100, message
 
     x = 0
     for i in range(row):
