@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-interview about a function that returns
+Interview about a function that returns
     the perimeter of the island described in grid
 """
 
